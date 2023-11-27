@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "d44c231d-a9df-4fb6-ae07-43b9c8d94030",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31250421"
+	},
+	"item": [
+		{
+			"name": "UploadForm",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/UploadForm.html",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"UploadForm.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "note_name",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "text2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/notes",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoteName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/notes/test1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes",
+						"test1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoteName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Update text2"
+				},
+				"url": {
+					"raw": "localhost:8000/notes/test2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes",
+						"test2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoteDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/notes/test1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes",
+						"test1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
